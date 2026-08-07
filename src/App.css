@@ -18,7 +18,10 @@
 
 .hotspot-panel h1 {
   margin: 0 0 4px;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .hotspot-panel p {
@@ -59,4 +62,13 @@
   text-align: center;
   color: #ccc;
   font-size: 0.8rem;
+}
+
+.hotspot-buttons button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.hotspot-buttons button:disabled:hover {
+  background: rgba(255, 255, 255, 0.05);
 }
