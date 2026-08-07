@@ -4,8 +4,9 @@ import { OrbitControls, Environment, Html } from '@react-three/drei'
 import GlockModel from './components/GlockModel'
 import './App.css'
 
-// Pfad zur .glb-Datei relativ zu /public
-const MODEL_PATH = '/models/G45_ExplodedAnim.glb'
+// Pfad zur .glb-Datei relativ zu /public. BASE_URL berücksichtigt den
+// GitHub-Pages-Unterpfad (/G45Explodedview/) im Production-Build, im Dev-Server ist es "/".
+const MODEL_PATH = `${import.meta.env.BASE_URL}models/G45_ExplodedAnim.glb`
 
 export default function App() {
   // Das Modell enthält genau eine Animation (die Explosionsdarstellung),
